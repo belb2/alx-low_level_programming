@@ -1,20 +1,18 @@
+#include <unistd.h>
 #include "main.h"
+
 /**
- * main - the file execution begins here
- *
- * Return: 0 if success
- *
+ * main - Check description
+ * Description: It prints _putchar, followed by a new line.
+ * Return: 0.
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char x[8] = "_putchar";
+	int i;
+
+	for (i = 0; i < 8; i++)
+		_putchar(x[i]);
 	_putchar('\n');
 
 	return (0);
